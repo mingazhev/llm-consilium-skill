@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Local env / secrets
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.kubeconfig
+
+# Local auth/config caches
+.codex/
+.config/gh/
+hosts.yml
+.git-credentials
+.netrc
+.ssh/
+
+# Runtime artifacts
+artifacts/
+agent-runs/
+logs/
+raw/
+*.err
+*.log
+council_run.json
+route_status.json
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/

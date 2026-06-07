@@ -1,0 +1,35 @@
+{
+  "question": "...",
+  "mode": "full",
+  "models": [
+    {
+      "id": "<candidate-id-from-config>",
+      "route": "<route-from-config>",
+      "role": "candidate|reviewer|judge|evidence-checker"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "text": "...",
+      "type": "factual|recommendation|risk|assumption|uncertainty",
+      "stances": {
+        "<candidate-id-from-config>": "support|oppose|mixed|unclear|not_addressed"
+      },
+      "evidence_status": "single-model-only|cross-model-repeated|all-models-repeated|model-consistency-only|verified-after-tool-check|contradicted-after-tool-check|unresolved",
+      "agreement_level": "low|medium|high",
+      "notes": "..."
+    }
+  ],
+  "consensus_claims": [
+    "C1"
+  ],
+  "contested_claims": [
+    "C2"
+  ],
+  "unverified_claims": [
+    "C3"
+  ],
+  "final_answer": "...",
+  "confidence": "low|medium|high"
+}

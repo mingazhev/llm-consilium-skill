@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "modes": {
+    "fast": {
+      "default_candidates": [
+        "candidate-a",
+        "candidate-b"
+      ]
+    },
+    "full": {
+      "default_candidates": [
+        "candidate-a",
+        "candidate-b",
+        "candidate-c"
+      ]
+    }
+  },
+  "candidates": {
+    "candidate-a": {
+      "label": "Configure me: primary model",
+      "route": "custom",
+      "command": [
+        "python3",
+        "-c",
+        "import sys; prompt=sys.stdin.read(); print('## Position\\nPlaceholder candidate. Configure your model command.\\n\\n## Main arguments\\n- This default config is safe for smoke tests only.\\n\\n## Risks / caveats\\n- Not a real model output.\\n\\n## Confidence\\nlow — placeholder.\\n\\n## What could change the conclusion\\n- Configure a real candidate route.')"
+      ],
+      "timeout": 300,
+      "preflight": false,
+      "explicit_reasoning": "unknown/configure-in-your-route",
+      "prompt_transport": "stdin",
+      "notes": "Placeholder. Replace with your local model/agent command."
+    },
+    "candidate-b": {
+      "label": "Configure me: alternative model",
+      "route": "custom",
+      "command": [
+        "python3",
+        "-c",
+        "import sys; prompt=sys.stdin.read(); print('## Position\\nPlaceholder candidate. Configure your model command.\\n\\n## Main arguments\\n- This default config is safe for smoke tests only.\\n\\n## Risks / caveats\\n- Not a real model output.\\n\\n## Confidence\\nlow — placeholder.\\n\\n## What could change the conclusion\\n- Configure a real candidate route.')"
+      ],
+      "timeout": 300,
+      "preflight": false,
+      "explicit_reasoning": "unknown/configure-in-your-route",
+      "prompt_transport": "stdin",
+      "notes": "Placeholder. Replace with your local model/agent command."
+    },
+    "candidate-c": {
+      "label": "Configure me: full-mode extra model",
+      "route": "custom",
+      "command": [
+        "python3",
+        "-c",
+        "import sys; prompt=sys.stdin.read(); print('## Position\\nPlaceholder candidate. Configure your model command.\\n\\n## Main arguments\\n- This default config is safe for smoke tests only.\\n\\n## Risks / caveats\\n- Not a real model output.\\n\\n## Confidence\\nlow — placeholder.\\n\\n## What could change the conclusion\\n- Configure a real candidate route.')"
+      ],
+      "timeout": 300,
+      "preflight": false,
+      "explicit_reasoning": "unknown/configure-in-your-route",
+      "prompt_transport": "stdin",
+      "notes": "Placeholder. Replace with your local model/agent command."
+    }
+  }
+}
